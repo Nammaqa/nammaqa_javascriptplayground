@@ -1,0 +1,110 @@
+
+
+
+
+/* FULL PAGE BACKGROUND */
+html, body {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #000; /* GLOBAL BLACK TEXT */
+}
+
+/* ROOT CONTAINER (Playground Box) */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #E1E1E1; /* light grey */
+  border-radius: 12px;
+  color: #000; /* BLACK TEXT */
+}
+
+/* REMOVE VITE DEFAULT LOGO ANIMATION */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+/* UPDATED — REMOVE BLUE HOVER GLOW */
+.logo:hover,
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #E1E1E1);
+}
+
+/* BUTTONS (remove blue background) */
+.runButton,
+.executeBtn {
+  background-color: #E1E1E1 !important;
+  color: #000 !important;    /* BLACK TEXT */
+  border: 1px solid #aaa;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.runButton:hover,
+.executeBtn:hover {
+  background-color: #d5d5d5;
+}
+
+/* SIDEBAR + TOPIC CARDS FIX (remove dark blue) */
+.sidebar {
+  background-color: #E1E1E1 !important;
+  color: #000 !important; /* BLACK TEXT */
+}
+
+.topicCard {
+  background-color: #E1E1E1 !important;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #000 !important; /* BLACK TEXT */
+}
+
+.methodRow {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.methodRow span {
+  color: #000 !important; /* BLACK METHOD NAMES */
+}
+
+/* TEXT / CARD STYLE */
+.card {
+  padding: 2em;
+  color: #000 !important;
+}
+
+.read-the-docs {
+  color: #000 !important;
+}
+
+/* MAKE MAIN AREA LIGHT GREY */
+.main {
+  background-color: #E1E1E1 !important;
+  color: #000 !important; /* BLACK TEXT */
+}
+
+/* CODE EDITOR + OUTPUT BOXES */
+.codeEditor,
+.outputBox,
+.domPreview {
+  background-color: #FFFFFF !important; /* white */
+  color: #000 !important;               /* BLACK TEXT */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* HEADINGS ENSURED BLACK */
+h1, h2, h3, h4, h5, h6 {
+  color: #000 !important;
+}
